@@ -4,17 +4,11 @@
   box-sizing: border-box;
 }
 
-
-
-
 body {
-  /*
-  background-image: url(./assets/bg-mobile.jpg);
+  /* background-image: url(./assets/bg-mobile.jpg);
   background-repeat: no-repeat;
   background-position: top center;
-  background-size: cover; 
-  */
-
+  background-size: cover;  */
   /* background em uma linha com todos os comandos acima */
   background: url(./assets/bg-mobile.jpg) no-repeat top center/cover;
 }
@@ -27,9 +21,9 @@ body * {
 #container {
   width: 360px;
   
-  margin: auto;
+  margin: 56px auto 0px;
 
-  padding-top: 56px;
+  padding:0 24px;
 }
 
 #profile {
@@ -37,11 +31,9 @@ body * {
   padding: 24px;
 }
 
-
 #profile img {
   width: 112px;
 }
-
 
 #profile p{
   font-weight: 500;
@@ -58,7 +50,7 @@ ul {
   gap: 16px;
 }
 
-ul li {
+ul li a{
   
   display:flex;
   align-items: center;
@@ -69,5 +61,12 @@ ul li {
   background: rgba(255, 255, 255, 0.1);
   border-radius: 8px;
   backdrop-filter: blur(4px);
-  
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.2s;
+}
+
+ul li a:hover{
+   border: 1px solid white;
+  background: rgba(255, 255, 255, 0.05)
 }
