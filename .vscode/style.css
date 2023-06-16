@@ -20,9 +20,7 @@ body * {
 
 #container {
   width: 360px;
-  
   margin: 56px auto 0px;
-
   padding:0 24px;
 }
 
@@ -48,6 +46,8 @@ ul {
   display:flex;
   flex-direction: column;
   gap: 16px;
+
+  padding: 24px;
 }
 
 ul li a{
